@@ -3,7 +3,7 @@
 <title>El Quilombo · Empanadas argentinas en El Boalo</title>
 <meta name="description" content="Bar El Quilombo, en El Boalo: empanadas argentinas caseras, pizza, raciones y terraza. C/ Peña Hoyuela 2. Pide tus empanadas por WhatsApp.">
 <meta property="og:title" content="El Quilombo · Empanadas argentinas en El Boalo">
-<meta property="og:description" content="Empanadas argentinas caseras, pizza y raciones en El Boalo. Arma tu docena y pídela por WhatsApp.">
+<meta property="og:description" content="Empanadas argentinas caseras, pizza y raciones en El Boalo. Elige tu docena y pídela por WhatsApp.">
 <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QBPCHr1ar_il44e5TB_PJjyO3t3tY4IECyejmSVOh6yGiMe5i-fTvIumUERsd4su6m_pkKpn41PB2PzdTlQZEctWrPzE8zJMs9AiBF1fHa2KtsAU0QTiY945sGdGp2YGsPNJwX=w1200-h630-k-no">
 <meta name="theme-color" content="#1f2a26">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥟</text></svg>">
@@ -297,7 +297,7 @@ footer a{color:var(--chalk)}
    <h1><span class="logo">El Quilombo</span><span class="hand">empanadas argentinas en El Boalo</span></h1>
    <p class="lede">Empanadas argentinas caseras, pizza, raciones para compartir y una terraza en el centro del pueblo. Aquí se viene a estar como en casa.</p>
    <div class="ctas">
-    <a class="btn btn-brick" href="#empanadas">Arma tu docena →</a>
+    <a class="btn btn-brick" href="#empanadas">Elige tu docena →</a>
     <a class="btn btn-wa" href="https://wa.me/34677182091?text=Hola!%20Quer%C3%ADa%20preguntar%20por%20las%20empanadas%20%F0%9F%98%8A" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Escríbenos</a>
    </div>
    <div class="rate"><svg class="g-logo"><use href="#glogo"/></svg><b>4,7</b><span class="stars">★★★★★</span><span>en Google · "las mejores empanadas de España"</span></div>
@@ -313,7 +313,7 @@ footer a{color:var(--chalk)}
 
 <section id="empanadas" class="sec-emp"><div class="wrap">
  <span class="kicker">la estrella de la casa</span>
- <h2 class="sec-title">Arma tu docena</h2>
+ <h2 class="sec-title">Elige tu docena</h2>
  <p class="sec-sub">Elige cuántas quieres de cada una y mándanos el pedido por WhatsApp. Te avisamos cuando estén listas para recoger.</p>
  <div class="emp-grid" id="empGrid"></div>
  <div class="box" id="box">
@@ -413,7 +413,7 @@ footer a{color:var(--chalk)}
 <section class="cta-band"><div class="wrap">
  <h2>¿Se te antojan unas empanadas?</h2>
  <span class="hand">dale, che, que te las preparamos</span>
- <a class="btn" href="#empanadas">Armar mi docena →</a>
+ <a class="btn" href="#empanadas">Pedir mi docena →</a>
 </div></section>
 </main>
 
@@ -476,7 +476,7 @@ const st=$('#status');st.className='status '+(open?'open':'closed');
 st.innerHTML='<i></i>'+(open?'Abierto ahora · hasta '+fmt(open):'Cerrado ahora · '+(next?'abre a las '+next:'mañana desde las '+H[(n.d+1)%7][0].split('-')[0]));
 const tr=$$('.hours tr')[n.d];if(tr)tr.classList.add('today');
 
-/* arma tu docena */
+/* elige tu docena */
 const F=window.FLAVORS,cnt=F.map(()=>0),grid=$('#empGrid');
 grid.innerHTML=F.map((f,i)=>`<article class="emp" data-i="${i}"><svg class="ico"><use href="#emp"/></svg><div class="tx">${f.t?`<span class="tag">${f.t}</span>`:''}<h3>${f.n}</h3><p>${f.d}</p></div><div class="ctr"><button class="sub" type="button" aria-label="Quitar una de ${f.n}">−</button><span class="n">0</span><button class="add" type="button" aria-label="Añadir una de ${f.n}">+</button></div><span class="pop">+1</span></article>`).join('');
 function total(){return cnt.reduce((a,b)=>a+b,0)}
