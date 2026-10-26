@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1f2a26">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥟</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Kaushan+Script&family=DM+Serif+Display:ital@0;1&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--cream:#f7f0e3;--cream2:#efe4d0;--card:#fffaf1;--ink:#2a2420;--muted:#74675a;--line:#e4d6bf;--brick:#b0532d;--brick-d:#8f3f1f;--celeste:#6fa8dc;--sol:#f2b01e;--board:#1f2a26;--board2:#27352f;--chalk:#f3efe6;--wa:#1faa59;--fh:'DM Serif Display',Georgia,serif;--fc:'Caveat',cursive;--fb:'Figtree',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -40,7 +40,7 @@ h1,h2,h3{font-family:var(--fh);font-weight:400;line-height:1.02;letter-spacing:-
 .nav{position:sticky;top:0;z-index:60;background:rgba(247,240,227,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
 .brand{text-decoration:none;line-height:1}
-.brand b{display:block;font-family:var(--fc);font-weight:700;font-size:2rem;color:var(--board);line-height:.9}
+.brand b{display:block;font-family:"Kaushan Script",var(--fc);font-weight:400;font-size:1.8rem;color:var(--board);line-height:.9}
 .brand small{display:flex;align-items:center;gap:7px;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:2px}
 .links{display:flex;align-items:center;gap:26px;list-style:none}
 .links a{text-decoration:none;font-weight:600;font-size:.95rem}
@@ -65,6 +65,7 @@ h1,h2,h3{font-family:var(--fh);font-weight:400;line-height:1.02;letter-spacing:-
 .status.closed i{background:var(--brick)}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,191,107,.55)}70%{box-shadow:0 0 0 10px rgba(47,191,107,0)}100%{box-shadow:0 0 0 0 rgba(47,191,107,0)}}
 .hero h1{font-size:clamp(3.4rem,10vw,6.6rem);margin-bottom:6px}
+.hero h1 .logo{font-family:"Kaushan Script","DM Serif Display",cursive;font-weight:400;letter-spacing:0}
 .hero h1 .hand{display:block;font-size:.6em;color:var(--brick);transform:rotate(-3deg);margin:6px 0 0 4px}
 .hero .lede{font-size:1.14rem;color:var(--muted);max-width:500px;margin:20px 0 28px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
@@ -293,7 +294,7 @@ footer a{color:var(--chalk)}
  <div class="wrap">
   <div>
    <span class="status" id="status"><i></i>Horario</span>
-   <h1>El Quilombo<span class="hand">empanadas argentinas en El Boalo</span></h1>
+   <h1><span class="logo">El Quilombo</span><span class="hand">empanadas argentinas en El Boalo</span></h1>
    <p class="lede">Empanadas argentinas caseras, pizza, raciones para compartir y una terraza en el centro del pueblo. Aquí se viene a estar como en casa.</p>
    <div class="ctas">
     <a class="btn btn-brick" href="#empanadas">Arma tu docena →</a>
